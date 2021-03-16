@@ -12,7 +12,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Equinor.WindMateGetAccessToken"
+				"cwd": "${workspaceFolder}/Equinor.GetAccessTokenFromCertificate"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Equinor.WindMateGetAccessToken"
+				"cwd": "${workspaceFolder}/Equinor.GetAccessTokenFromCertificate"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Equinor.WindMateGetAccessToken"
+				"cwd": "${workspaceFolder}/Equinor.GetAccessTokenFromCertificate"
 			}
 		},
 		{
@@ -64,14 +64,14 @@
 			"dependsOn": "clean release",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Equinor.WindMateGetAccessToken"
+				"cwd": "${workspaceFolder}/Equinor.GetAccessTokenFromCertificate"
 			}
 		},
 		{
 			"type": "func",
 			"dependsOn": "build",
 			"options": {
-				"cwd": "${workspaceFolder}/Equinor.WindMateGetAccessToken/bin/Debug/netcoreapp3.1"
+				"cwd": "${workspaceFolder}/Equinor.GetAccessTokenFromCertificate/bin/Debug/netcoreapp3.1"
 			},
 			"command": "host start",
 			"isBackground": true,
