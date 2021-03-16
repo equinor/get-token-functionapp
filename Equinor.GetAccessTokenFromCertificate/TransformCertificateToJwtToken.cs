@@ -36,7 +36,7 @@ namespace Equinor.GetAccessTokenFromCertificate
                 WithCertificate(x509Cert).
                 Build();
 
-            //request a token for scope maintenance API for poc client
+            //request a token for scope for client
             var scope = $"{data.Scope}/.default";
             var token = await confidentialClientApp
                 .AcquireTokenForClient(new[] { scope })
