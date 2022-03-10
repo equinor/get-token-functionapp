@@ -23,11 +23,11 @@ namespace Equinor.GetAccessTokenFromCertificate
 
             var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var data = Payload.FromJson(requestBody);
-            if (data == null || string.IsNullOrEmpty(data.CertificateString)
-                             || string.IsNullOrEmpty(data.Scope)
-                             || string.IsNullOrEmpty(data.ClientId)
-                             || string.IsNullOrEmpty(data.TenantId))
-                return new BadRequestObjectResult("Could not read out the payload");
+            if (data == null) return new BadRequestObjectResult("Body missing or not able to read");
+            if (string.IsNullOrEmpty(data.CertificateString)) return new BadRequestObjectResult("`certificate` missing or not able to read");
+            if (string.IsNullOrEmpty(data.Scope)) return new BadRequestObjectResult("`scope` missing or not able to read");
+            if (string.IsNullOrEmpty(data.ClientId)) return new BadRequestObjectResult("`client` missing or not able to read");
+            if (string.IsNullOrEmpty(data.TenantId)) return new BadRequestObjectResult("`tenantId` missing or not able to read");
 
             var x509Cert = data.GetCertificate();
             var confidentialClientApp = ConfidentialClientApplicationBuilder.
@@ -50,7 +50,6 @@ namespace Equinor.GetAccessTokenFromCertificate
     {
         [JsonPropertyName("certificate")]
         public string CertificateString { get; set; }
-
         [JsonPropertyName("clientId")]
         public string ClientId { get; set; }
         [JsonPropertyName("scope")]
