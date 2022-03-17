@@ -1,6 +1,6 @@
 {
     "azureFunctions.projectSubpath": "Equinor.GetAccessTokenFromCertificate",
-    "azureFunctions.deploySubpath": "Equinor.GetAccessTokenFromCertificate/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.deploySubpath": "Equinor.GetAccessTokenFromCertificate/bin/Release/net6.0-windows/publish",
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",

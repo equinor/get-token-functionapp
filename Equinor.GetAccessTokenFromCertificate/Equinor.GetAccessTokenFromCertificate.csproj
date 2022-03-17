@@ -1,8 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <AzureFunctionsVersion>V3</AzureFunctionsVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <AzureFunctionsVersion>v4</AzureFunctionsVersion>
         <Company>Equinor</Company>
+        <LangVersion>10</LangVersion>
+        <OutputType>Library</OutputType>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.Identity.Client" Version="4.27.0" />
