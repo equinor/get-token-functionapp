@@ -10,9 +10,4 @@ The Maintenance API Team will send a response indicating the next steps in handl
 
 Report security bugs in third-party packages to the person or team maintaining the package.
 
-**Important**: Please do not disclose the vulnerability publicly until a fix is released. Once we have either 
-
-a) published a fix, or 
-b) explicitly declined to address the vulnerability for whatever reason
-
-you are free to publicly disclose it.
+**Important**: Please do not disclose the vulnerability publicly until a fix is released. 
